@@ -1,0 +1,37 @@
+--
+--  The author disclaims copyright to this source code.  In place of
+--  a legal notice, here is a blessing:
+--
+--    May you do good and not evil.
+--    May you find forgiveness for yourself and forgive others.
+--    May you share freely, not taking more than you give.
+--
+
+with "DK8543";
+
+project DK8543_Test is
+
+  for Languages    use ("Ada");
+  for Source_Dirs  use ("test/");
+  for Object_Dir   use ".object/";
+  for Exec_Dir     use "binary/";
+  for Main         use ("dk8543_test.adb");
+
+  package Builder is
+
+     for Default_Switches ("Ada") use
+       ("-g",
+        "-O2",
+        "-gnatf",
+        "-gnatwa",
+        "-gnatwj",
+        "-gnat2012",
+        "-gnaty",
+        "-gnatyM99");
+
+     for Executable ("dk8543_test.adb")
+       use "test-dk8543";
+
+  end Builder;
+
+end DK8543_Test;

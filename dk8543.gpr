@@ -1,0 +1,31 @@
+--
+--  The author disclaims copyright to this source code.  In place of
+--  a legal notice, here is a blessing:
+--
+--    May you do good and not evil.
+--    May you find forgiveness for yourself and forgive others.
+--    May you share freely, not taking more than you give.
+--
+
+library project DK8543 is
+
+  for Library_Name use "dk8543";
+  for Library_Dir  use "library";
+  for Languages    use ("Ada");
+  for Source_Dirs  use ("spec/", "body/");
+  for Object_Dir   use ".object/";
+
+  package Builder is
+
+     for Default_Switches ("Ada") use
+       ("-g",
+        "-O2",
+        "-gnatf",
+        "-gnatwa",
+        "-gnatwj",
+        "-gnat95",
+        "-gnaty",
+        "-gnatyM99");
+  end Builder;
+
+end DK8543;
