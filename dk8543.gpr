@@ -9,11 +9,13 @@
 
 library project DK8543 is
 
-  for Library_Name use "dk8543";
+  for Library_Name use "DK8543";
   for Library_Dir  use "library";
   for Languages    use ("Ada");
   for Source_Dirs  use ("spec/", "body/");
   for Object_Dir   use ".object/";
+
+  for Create_Missing_Dirs use "true";
 
   package Builder is
 
@@ -23,7 +25,7 @@ library project DK8543 is
         "-gnatf",
         "-gnatwa",
         "-gnatwj",
-        "-gnat95",
+        "-gnat2005",
         "-gnaty",
         "-gnatyM99");
   end Builder;

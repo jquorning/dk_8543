@@ -17,6 +17,8 @@ project DK8543_Test is
   for Exec_Dir     use "binary/";
   for Main         use ("dk8543_test.adb");
 
+  for Create_Missing_Dirs use "true";
+
   package Builder is
 
      for Default_Switches ("Ada") use
@@ -30,7 +32,7 @@ project DK8543_Test is
         "-gnatyM99");
 
      for Executable ("dk8543_test.adb")
-       use "test-dk8543";
+       use "test-DK8543";
 
   end Builder;
 

@@ -10,10 +10,10 @@
 all: build test
 
 build:
-	gprbuild -k -p dk8543.gpr
+	gprbuild -k dk8543.gpr
 
 test:
-	gprbuild -k -p dk8543_test.gpr
+	gprbuild -k dk8543_test.gpr
 
 clean:
 	gprclean -q dk8543.gpr
