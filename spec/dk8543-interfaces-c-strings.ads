@@ -7,13 +7,10 @@
 --    May you share freely, not taking more than you give.
 --
 
-package DK8543 is
+package DK8543.Interfaces.C.Strings is
 
-   function To_Ada_Symbol (Text : in String) return String;
-   --  Convert into ada symbol
+   function Is_Upper (C : in Character) return Boolean;
+   function Is_Lower (C : in Character) return Boolean;
+   function Is_Alpha (C : in Character) return Boolean;
 
-   function Image (Value : in Integer)
-                  return String;
-   --  Trimmed image of Value.
-
-end DK8543;
+end DK8543.Interfaces.C.Strings;

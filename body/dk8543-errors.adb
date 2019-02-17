@@ -7,6 +7,8 @@
 --    May you share freely, not taking more than you give.
 --
 
+with Ada.Text_IO;
+
 package body DK8543.Errors is
 
 
@@ -14,6 +16,7 @@ package body DK8543.Errors is
                     Line_Number : in Natural;
                     Message     : in String)
    is
+      use Ada.Text_IO;
    begin
       Put (Standard_Error, File_Name);
       Put (Standard_Error, ":");

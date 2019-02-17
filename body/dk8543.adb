@@ -13,19 +13,6 @@ with Ada.Characters.Handling;
 package body DK8543 is
 
 
-   procedure Recreate
-     (File      : in out File_Type;
-      Mode      : in     File_Mode;
-      File_Name : in     String)
-   is
-   begin
-      Create (File, Mode, File_Name);
-   exception
-      when others =>
-         Open (File, Mode, File_Name);
-   end Recreate;
-
-
    function To_Ada_Symbol (Text : in String) return String is
       use Ada.Characters.Handling;
       Result : String (Text'Range);
@@ -53,34 +40,6 @@ package body DK8543 is
       end loop;
       return Result;
    end To_Ada_Symbol;
-
-
-   function Is_Upper (C : in Character) return Boolean is
-   begin
-      case C is
-         when 'A' .. 'Z' =>  return True;
-         when others     =>  return False;
-      end case;
-   end Is_Upper;
-
-
-   function Is_Lower (C : in Character) return Boolean is
-   begin
-      case C is
-         when 'a' .. 'z' =>  return True;
-         when others     =>  return False;
-      end case;
-   end Is_Lower;
-
-
-   function Is_Alpha (C : in Character) return Boolean is
-   begin
-      case C is
-         when 'A' .. 'Z' =>  return True;
-         when 'a' .. 'z' =>  return True;
-         when others     =>  return False;
-      end case;
-   end Is_Alpha;
 
 
    function Image (Value : in Integer) return String is

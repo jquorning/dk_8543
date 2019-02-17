@@ -7,13 +7,16 @@
 --    May you share freely, not taking more than you give.
 --
 
-package DK8543 is
+with Ada.Text_IO;
 
-   function To_Ada_Symbol (Text : in String) return String;
-   --  Convert into ada symbol
+package DK8543.Text_IO is
 
-   function Image (Value : in Integer)
-                  return String;
-   --  Trimmed image of Value.
 
-end DK8543;
+   procedure Recreate
+     (File      : in out Ada.Text_IO.File_Type;
+      Mode      : in     Ada.Text_IO.File_Mode;
+      File_Name : in     String);
+   --  Create or open file.
+
+
+end DK8543.Text_IO;

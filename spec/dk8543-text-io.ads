@@ -7,10 +7,12 @@
 --    May you share freely, not taking more than you give.
 --
 
+with Ada.Text_IO;
+
 package DK8543.Text.IO is
 
    Line_Number : Natural := Natural'First;
 
-   function Line_Get (File : File_Type) return String;
+   function Line_Get (File : Ada.Text_IO.File_Type) return String;
 
 end DK8543.Text.IO;

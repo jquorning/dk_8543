@@ -9,9 +9,9 @@
 
 package body DK8543.Text.IO is
 
-   function Line_Get (File : File_Type) return String
+   function Line_Get (File : Ada.Text_IO.File_Type) return String
    is
-      Line : constant String := Get_Line (File);
+      Line : constant String := Ada.Text_IO.Get_Line (File);
    begin
       Line_Number := Line_Number + 1;
       return Line;
