@@ -7,4 +7,10 @@
 --    May you share freely, not taking more than you give.
 --
 
-package IO_Text renames DK8543.IO_Text;
+package DK8543.Text.IO is
+
+   Line_Number : Natural := Natural'First;
+
+   function Line_Get (File : File_Type) return String;
+
+end DK8543.Text.IO;
