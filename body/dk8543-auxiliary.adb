@@ -10,7 +10,7 @@
 with Ada.Strings.Fixed;
 with Ada.Characters.Handling;
 
-package body DK8543 is
+package body DK8543.Auxiliary is
 
 
    function To_Ada_Symbol (Text : in String) return String is
@@ -49,4 +49,4 @@ package body DK8543 is
    end Image;
 
 
-end DK8543;
+end DK8543.Auxiliary;

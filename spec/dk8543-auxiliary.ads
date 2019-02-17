@@ -7,6 +7,13 @@
 --    May you share freely, not taking more than you give.
 --
 
-package DK8543 is
+package DK8543.Auxiliary is
 
-end DK8543;
+   function To_Ada_Symbol (Text : in String) return String;
+   --  Convert into ada symbol
+
+   function Image (Value : in Integer)
+                  return String;
+   --  Trimmed image of Value.
+
+end DK8543.Auxiliary;
