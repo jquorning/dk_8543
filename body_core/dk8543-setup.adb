@@ -17,19 +17,19 @@ package body DK8543.Setup is
 
    function Get_Library_Name return String is
    begin
-      return "@_LIBRARY_NAME_@";
+      return "DK8543";
    end Get_Library_Name;
 
 
    function Get_Library_Version return String is
    begin
-      return "@_LIBRARY_VERSION_@";
+      return "0.1.0";
    end Get_Library_Version;
 
 
    function Get_Build_ISO8601_UTC return String is
    begin
-      return "@_DATE_TIME_UTC_@";
+      return "2019-02-28T13:43:51";
    end Get_Build_ISO8601_UTC;
 
 

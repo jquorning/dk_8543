@@ -1,0 +1,7 @@
+object/
+library/
+body_core/*setup.adb
+body_aws/*setup.adb
+body_gnat/*setup.adb
+var/*.template
+tools/create*
