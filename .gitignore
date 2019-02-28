@@ -1,7 +1,8 @@
 object/
 library/
 binary/
-body/dk8543-setup.adb
-body_aws/dk8543-aws-setup.adb
-var/LIBRARY_NAME
-var/LIBRARY_VERSION
+body_core/*setup.adb
+body_aws/*setup.adb
+body_gnat/*setup.adb
+var/*.template
+tools/create*
