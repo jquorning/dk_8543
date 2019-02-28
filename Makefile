@@ -7,7 +7,7 @@
 ##    May you share freely, not taking more than you give.
 ##
 
-all: setup build test
+all: build
 
 
 setup: setup-core setup-aws
@@ -24,10 +24,10 @@ setup-aws:
 	tools/create-setup-adb-aws.sh
 
 
-build-core:
+build-core: setup-core
 	gprbuild -k dk8543_core.gpr
 
-build-aws:
+build-aws: setup-aws
 	gprbuild -k dk8543_aws.gpr
 
 build-test:
