@@ -18,7 +18,7 @@ package body DK8543.Text.Utility is
       Pos : constant Natural := Ada.Strings.Fixed.Index (From, Strip);
    begin
       if Pos /= 0 then
-         Last := Pos;
+         Last := Pos - 1;
       end if;
    end Strip_End_Of_Line;
 
