@@ -7,12 +7,12 @@
 --    May you share freely, not taking more than you give.
 --
 
-with Ada.Text_IO;
+package DK8543.Strings.Comments is
 
-package DK8543.Text.IO is
 
-   Line_Number : Natural := Natural'First;
+   function Trim_Comments (From_String : String) return String;
+   --  Trim away comments from From_String. Comments are "#" and
+   --  "--". Both at starting line and end of line comments.
 
-   function Line_Get (File : Ada.Text_IO.File_Type) return String;
 
-end DK8543.Text.IO;
+end DK8543.Strings.Comments;

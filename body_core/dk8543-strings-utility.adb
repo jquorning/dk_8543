@@ -9,7 +9,7 @@
 
 with Ada.Strings.Fixed;
 
-package body DK8543.Text.Utility is
+package body DK8543.Strings.Utility is
 
    procedure Strip_End_Of_Line (From  : in     String;
                                 Strip : in     String  := "--";
@@ -23,4 +23,4 @@ package body DK8543.Text.Utility is
    end Strip_End_Of_Line;
 
 
-end DK8543.Text.Utility;
+end DK8543.Strings.Utility;

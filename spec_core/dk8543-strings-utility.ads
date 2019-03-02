@@ -7,12 +7,10 @@
 --    May you share freely, not taking more than you give.
 --
 
-package DK8543.Text.Comments is
+package DK8543.Strings.Utility is
 
+   procedure Strip_End_Of_Line (From  : in     String;
+                                Strip : in     String  := "--";
+                                Last  : in out Natural);
 
-   function Trim_Comments (From_String : String) return String;
-   --  Trim away comments from From_String. Comments are "#" and
-   --  "--". Both at starting line and end of line comments.
-
-
-end DK8543.Text.Comments;
+end DK8543.Strings.Utility;
