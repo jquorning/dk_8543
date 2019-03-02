@@ -9,7 +9,7 @@
 
 with Ada.Strings.Fixed;
 
-package body DK8543.Text.Comments is
+package body DK8543.Strings.Comments is
 
 
    function Trim_Comments (From_String : String) return String
@@ -35,4 +35,4 @@ package body DK8543.Text.Comments is
    end Trim_Comments;
 
 
-end DK8543.Text.Comments;
+end DK8543.Strings.Comments;

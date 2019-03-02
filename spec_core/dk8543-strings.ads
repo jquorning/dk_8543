@@ -9,7 +9,7 @@
 
 with Ada.Strings;
 
-package DK8543.Text is
+package DK8543.Strings is
 
    procedure Trim
      (Item  : in     String;
@@ -22,4 +22,4 @@ package DK8543.Text is
       Item : in String) return Boolean;
    --  Return True when Item is first part of From.
 
-end DK8543.Text;
+end DK8543.Strings;

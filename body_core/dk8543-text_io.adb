@@ -24,4 +24,13 @@ package body DK8543.Text_IO is
    end Recreate;
 
 
+   function Line_Get (File : Ada.Text_IO.File_Type) return String
+   is
+      Line : constant String := Ada.Text_IO.Get_Line (File);
+   begin
+      Line_Number := Line_Number + 1;
+      return Line;
+   end Line_Get;
+
+
 end DK8543.Text_IO;

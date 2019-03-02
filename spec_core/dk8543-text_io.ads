@@ -19,4 +19,10 @@ package DK8543.Text_IO is
    --  Create or open file.
 
 
+   Line_Number : Natural := Natural'First;
+
+   function Line_Get (File : Ada.Text_IO.File_Type) return String;
+   --  Get line from file with Line_Number update
+
+
 end DK8543.Text_IO;

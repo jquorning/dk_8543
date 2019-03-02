@@ -7,7 +7,7 @@
 --    May you share freely, not taking more than you give.
 --
 
-package body DK8543.Text is
+package body DK8543.Strings is
 
 
    procedure Trim
@@ -52,6 +52,7 @@ package body DK8543.Text is
 
    end Trim;
 
+
    function In_First_Part
      (From : in String;
       Item : in String) return Boolean
@@ -67,4 +68,5 @@ package body DK8543.Text is
       end if;
    end In_First_Part;
 
-end DK8543.Text;
+
+end DK8543.Strings;
