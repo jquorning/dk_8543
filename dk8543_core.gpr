@@ -29,7 +29,6 @@ library project DK8543_Core is
         "-gnatf",
         "-gnatwa",
         "-gnatwj",
-        "-gnat2005",
         "-gnaty",
         "-gnatyM99");
   end Builder;
