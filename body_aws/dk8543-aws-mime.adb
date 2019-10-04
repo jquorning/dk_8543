@@ -19,9 +19,12 @@ package body DK8543.AWS.MIME is
       use Standard.AWS.MIME;
       LC : constant String := Extension;
    begin
-      if    LC = ""     then  return Text_HTML;
-      elsif LC = "html" then  return Text_HTML;
-      elsif LC = "css"  then  return Text_CSS;
+      if    LC = ""     then
+         return Text_HTML;
+      elsif LC = "html" then
+         return Text_HTML;
+      elsif LC = "css"  then
+         return Text_CSS;
       else
          raise Constraint_Error;
       end if;
