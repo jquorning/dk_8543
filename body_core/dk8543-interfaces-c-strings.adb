@@ -10,30 +10,37 @@
 package body DK8543.Interfaces.C.Strings is
 
 
-   function Is_Upper (C : in Character) return Boolean is
+   function Is_Upper (Char : in Character) return Boolean is
    begin
-      case C is
-         when 'A' .. 'Z' =>  return True;
-         when others     =>  return False;
+      case Char is
+         when 'A' .. 'Z' =>
+            return True;
+         when others     =>
+            return False;
       end case;
    end Is_Upper;
 
 
-   function Is_Lower (C : in Character) return Boolean is
+   function Is_Lower (Char : in Character) return Boolean is
    begin
-      case C is
-         when 'a' .. 'z' =>  return True;
-         when others     =>  return False;
+      case Char is
+         when 'a' .. 'z' =>
+            return True;
+         when others     =>
+            return False;
       end case;
    end Is_Lower;
 
 
-   function Is_Alpha (C : in Character) return Boolean is
+   function Is_Alpha (Char : in Character) return Boolean is
    begin
-      case C is
-         when 'A' .. 'Z' =>  return True;
-         when 'a' .. 'z' =>  return True;
-         when others     =>  return False;
+      case Char is
+         when 'A' .. 'Z' =>
+            return True;
+         when 'a' .. 'z' =>
+            return True;
+         when others     =>
+            return False;
       end case;
    end Is_Alpha;
 

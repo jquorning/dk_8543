@@ -13,3 +13,5 @@ all:
 clean:
 	cd ..; make clean
 
+verify:
+	cd ..; make verify

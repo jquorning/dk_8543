@@ -12,7 +12,7 @@ with Ada.Strings.Fixed;
 package body DK8543.Strings.Comments is
 
 
-   function Trim_Comments (From_String : String) return String
+   function Trim_Comments (From_String : in String) return String
    is
       use Ada.Strings;
       Pos_Hash : constant Natural := Fixed.Index (From_String, "#");

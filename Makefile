@@ -44,3 +44,8 @@ clean-test:
 	gprclean -q dk8543_test.gpr
 
 
+verify:
+	adactl -v -p dk8543_core.gpr -f ../../adacontrol/rules/verif.aru body_core/*adb
+	adactl -v -p dk8543_aws.gpr  -f ../../adacontrol/rules/verif.aru body_aws/*adb
+#	adactl -v -p dk8543_gnat.gpr -f ../../adacontrol/rules/verif.aru body_gnat/*adb
+

@@ -10,7 +10,7 @@
 package DK8543.Strings.Comments is
 
 
-   function Trim_Comments (From_String : String) return String;
+   function Trim_Comments (From_String : in String) return String;
    --  Trim away comments from From_String. Comments are "#" and
    --  "--". Both at starting line and end of line comments.
 

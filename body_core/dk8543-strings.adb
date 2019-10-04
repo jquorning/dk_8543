@@ -43,11 +43,17 @@ package body DK8543.Strings is
    begin
 
       case Side is
-         when Left  =>  Trim_Left;
-         when Right =>  Trim_Right;
+
+         when Left  =>
+            Trim_Left;
+
+         when Right =>
+            Trim_Right;
+
          when Both =>
             Trim_Left;
             Trim_Right;
+
       end case;
 
    end Trim;

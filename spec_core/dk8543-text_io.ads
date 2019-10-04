@@ -21,7 +21,7 @@ package DK8543.Text_IO is
 
    Line_Number : Natural := Natural'First;
 
-   function Line_Get (File : Ada.Text_IO.File_Type) return String;
+   function Line_Get (File : in Ada.Text_IO.File_Type) return String;
    --  Get line from file with Line_Number update
 
 
