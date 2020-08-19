@@ -1,7 +1,7 @@
 object/
 library/
 binary/
-body_core/*setup.adb
+body_ada/*setup.adb
 body_aws/*setup.adb
 body_gnat/*setup.adb
 var/*.template
