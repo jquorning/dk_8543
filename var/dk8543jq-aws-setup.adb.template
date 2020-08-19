@@ -12,7 +12,7 @@
 --  create-setup-adb.sh from same directory.
 --
 
-package body DK8543.AWS.Setup is
+package body DK8543JQ.AWS.Setup is
 
 
    function Get_Library_Name return String is
@@ -33,4 +33,4 @@ package body DK8543.AWS.Setup is
    end Get_Build_ISO8601_UTC;
 
 
-end DK8543.AWS.Setup;
+end DK8543JQ.AWS.Setup;

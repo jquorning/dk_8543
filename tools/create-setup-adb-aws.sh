@@ -3,8 +3,8 @@
 base_directory=.
 temp_directory=$base_directory/var
 dest_directory=$base_directory/body_aws
-template=dk8543-aws-setup.adb.template
-destination=dk8543-aws-setup.adb
+template=dk8543jq-aws-setup.adb.template
+destination=dk8543jq-aws-setup.adb
 date_time_utc=$(date -u "+%Y-%m-%dT%H:%M:%S")
 library_name=$(cat $temp_directory/LIBRARY_NAME_AWS)
 library_version=$(cat $temp_directory/LIBRARY_VERSION_AWS)

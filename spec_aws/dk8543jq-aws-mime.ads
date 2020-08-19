@@ -7,9 +7,9 @@
 --    May you share freely, not taking more than you give.
 --
 
-with DK8543.AWS.Status;
+with DK8543JQ.AWS.Status;
 
-package DK8543.AWS.MIME is
+package DK8543JQ.AWS.MIME is
 
    subtype T_MIME is String;
    function To_MIME
@@ -19,4 +19,4 @@ package DK8543.AWS.MIME is
    --  Example: "css" returns "text/css".
    --  Example: ""    returns "text/html".
 
-end DK8543.AWS.MIME;
+end DK8543JQ.AWS.MIME;

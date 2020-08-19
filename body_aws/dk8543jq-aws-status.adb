@@ -9,7 +9,7 @@
 
 with Ada.Strings.Fixed;
 
-package body DK8543.AWS.Status is
+package body DK8543JQ.AWS.Status is
 
 
    function Host_Part (Host : in Host_String) return Host_String
@@ -42,4 +42,4 @@ package body DK8543.AWS.Status is
    end Extension_Part;
 
 
-end DK8543.AWS.Status;
+end DK8543JQ.AWS.Status;

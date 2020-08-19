@@ -9,7 +9,7 @@
 
 with AWS.MIME;
 
-package body DK8543.AWS.MIME is
+package body DK8543JQ.AWS.MIME is
 
 
    function To_MIME
@@ -31,4 +31,4 @@ package body DK8543.AWS.MIME is
    end To_MIME;
 
 
-end DK8543.AWS.MIME;
+end DK8543JQ.AWS.MIME;

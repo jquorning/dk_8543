@@ -7,7 +7,7 @@
 --    May you share freely, not taking more than you give.
 --
 
-package DK8543.AWS.Status is
+package DK8543JQ.AWS.Status is
 
    subtype Host_String is String;
    function Host_Part (Host : in Host_String) return Host_String;
@@ -21,4 +21,4 @@ package DK8543.AWS.Status is
    --  Get extension part of File_Name with possible file extension.
    --  Example: "main.css" returns "css".
 
-end DK8543.AWS.Status;
+end DK8543JQ.AWS.Status;
