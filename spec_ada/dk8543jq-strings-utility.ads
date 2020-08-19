@@ -7,10 +7,10 @@
 --    May you share freely, not taking more than you give.
 --
 
-package DK8543.Strings.Utility is
+package DK8543JQ.Strings.Utility is
 
    procedure Strip_End_Of_Line (From  : in     String;
                                 Strip : in     String  := "--";
                                 Last  : in out Natural);
 
-end DK8543.Strings.Utility;
+end DK8543JQ.Strings.Utility;

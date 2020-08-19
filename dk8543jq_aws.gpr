@@ -8,11 +8,11 @@
 --
 
 with "AWS";
-with "dk8543_core.gpr";
+with "dk8543jq_ada.gpr";
 
-library project DK8543_AWS is
+library project DK8543JQ_AWS is
 
-  for Library_Name use "DK8543AWS";
+  for Library_Name use "dk8543jq_aws";
   for Library_Dir  use "library";
   for Languages    use ("Ada");
   for Source_Dirs  use
@@ -34,4 +34,4 @@ library project DK8543_AWS is
         "-gnatyM99");
   end Builder;
 
-end DK8543_AWS;
+end DK8543JQ_AWS;

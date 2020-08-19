@@ -7,7 +7,7 @@
 --    May you share freely, not taking more than you give.
 --
 
-package body DK8543.Strings is
+package body DK8543JQ.Strings is
 
 
    procedure Trim
@@ -75,4 +75,4 @@ package body DK8543.Strings is
    end In_First_Part;
 
 
-end DK8543.Strings;
+end DK8543JQ.Strings;

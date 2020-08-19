@@ -7,6 +7,6 @@
 --    May you share freely, not taking more than you give.
 --
 
-package DK8543.Interfaces.C is
+package DK8543JQ.Interfaces is
 
-end DK8543.Interfaces.C;
+end DK8543JQ.Interfaces;

@@ -7,13 +7,12 @@
 --    May you share freely, not taking more than you give.
 --
 
-package DK8543.Auxiliary is
+package DK8543JQ.Strings.Comments is
 
-   function To_Ada_Symbol (Text : in String) return String;
-   --  Convert into ada symbol
 
-   function Image (Value : in Integer)
-                  return String;
-   --  Trimmed image of Value.
+   function Trim_Comments (From_String : in String) return String;
+   --  Trim away comments from From_String. Comments are "#" and
+   --  "--". Both at starting line and end of line comments.
 
-end DK8543.Auxiliary;
+
+end DK8543JQ.Strings.Comments;

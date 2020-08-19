@@ -10,42 +10,42 @@
 all: build
 
 
-setup: setup-core setup-aws
+setup: setup-ada setup-aws
 
-build: build-core build-aws
+build: build-ada build-aws
 
-clean: clean-core clean-aws
+clean: clean-ada clean-aws
 
 
-setup-core:
-	tools/create-setup-adb-core.sh
+setup-ada:
+	tools/create-setup-adb-ada.sh
 
 setup-aws:
 	tools/create-setup-adb-aws.sh
 
 
-build-core: setup-core
-	gprbuild -k dk8543_core.gpr
+build-ada: setup-ada
+	gprbuild -k dk8543jq_ada.gpr
 
 build-aws: setup-aws
-	gprbuild -k dk8543_aws.gpr
+	gprbuild -k dk8543jq_aws.gpr
 
 build-test:
-	gprbuild -k dk8543_test.gpr
+	gprbuild -k dk8543jq_test.gpr
 
 
-clean-core:
-	gprclean -q dk8543_core.gpr
+clean-ada:
+	gprclean -q dk8543jq_ada.gpr
 
 clean-aws:
-	gprclean -q dk8543_aws.gpr
+	gprclean -q dk8543jq_aws.gpr
 
 clean-test:
-	gprclean -q dk8543_test.gpr
+	gprclean -q dk8543jq_test.gpr
 
 
 verify:
-	adactl -v -p dk8543_core.gpr -f ../../adacontrol/rules/verif.aru body_core/*adb
-	adactl -v -p dk8543_aws.gpr  -f ../../adacontrol/rules/verif.aru body_aws/*adb
-#	adactl -v -p dk8543_gnat.gpr -f ../../adacontrol/rules/verif.aru body_gnat/*adb
+	adactl -v -p dk8543jq_ada.gpr  -f ../../adacontrol/rules/verif.aru body_core/*adb
+	adactl -v -p dk8543jq_aws.gpr  -f ../../adacontrol/rules/verif.aru body_aws/*adb
+#	adactl -v -p dk8543jq_gnat.gpr -f ../../adacontrol/rules/verif.aru body_gnat/*adb
 

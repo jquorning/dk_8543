@@ -7,7 +7,7 @@
 --    May you share freely, not taking more than you give.
 --
 
-package body DK8543.Interfaces.C.Strings is
+package body DK8543JQ.Interfaces.C.Strings is
 
 
    function Is_Upper (Char : in Character) return Boolean is
@@ -45,4 +45,4 @@ package body DK8543.Interfaces.C.Strings is
    end Is_Alpha;
 
 
-end DK8543.Interfaces.C.Strings;
+end DK8543JQ.Interfaces.C.Strings;

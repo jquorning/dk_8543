@@ -9,7 +9,7 @@
 
 with Ada.Text_IO;
 
-package DK8543.Text_IO is
+package DK8543JQ.Text_IO is
 
 
    procedure Recreate
@@ -25,4 +25,4 @@ package DK8543.Text_IO is
    --  Get line from file with Line_Number update
 
 
-end DK8543.Text_IO;
+end DK8543JQ.Text_IO;

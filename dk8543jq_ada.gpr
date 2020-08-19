@@ -7,17 +7,16 @@
 --    May you share freely, not taking more than you give.
 --
 
---  with "GNAT";
-with "dk8543.gpr";
+with "AWS";
 
-library project DK8543_GNAT is
+library project dk8543jq_ada is
 
-  for Library_Name use "DK8543GNAT";
+  for Library_Name use "dk8543_ada";
   for Library_Dir  use "library";
   for Languages    use ("Ada");
   for Source_Dirs  use
-    ("spec_gnat/",
-     "body_gnat/");
+    ("spec_ada/",
+     "body_ada/");
   for Object_Dir   use "object/";
 
   for Create_Missing_Dirs use "true";
@@ -34,4 +33,4 @@ library project DK8543_GNAT is
         "-gnatyM99");
   end Builder;
 
-end DK8543_GNAT;
+end dk8543jq_ada;

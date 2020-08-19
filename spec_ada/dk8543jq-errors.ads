@@ -7,10 +7,15 @@
 --    May you share freely, not taking more than you give.
 --
 
-package DK8543.Setup is
+with Ada.Text_IO;
 
-   function Get_Library_Name return String;
-   function Get_Library_Version return String;
-   function Get_Build_ISO8601_UTC return String;
+package DK8543JQ.Errors is
 
-end DK8543.Setup;
+
+   procedure Error (File        : in Ada.Text_IO.File_Type;
+                    File_Name   : in String;
+                    Line_Number : in Natural;
+                    Message     : in String);
+
+
+end DK8543JQ.Errors;

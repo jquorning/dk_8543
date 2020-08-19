@@ -7,7 +7,7 @@
 --    May you share freely, not taking more than you give.
 --
 
-package body DK8543.Text_IO is
+package body DK8543JQ.Text_IO is
 
 
    procedure Recreate
@@ -33,4 +33,4 @@ package body DK8543.Text_IO is
    end Line_Get;
 
 
-end DK8543.Text_IO;
+end DK8543JQ.Text_IO;

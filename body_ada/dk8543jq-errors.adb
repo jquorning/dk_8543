@@ -9,7 +9,7 @@
 
 with Ada.Strings.Fixed;
 
-package body DK8543.Errors is
+package body DK8543JQ.Errors is
 
 
    procedure Error (File        : in Ada.Text_IO.File_Type;
@@ -31,4 +31,4 @@ package body DK8543.Errors is
    end Error;
 
 
-end DK8543.Errors;
+end DK8543JQ.Errors;
